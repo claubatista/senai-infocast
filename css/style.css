@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+    font-size: 2.3rem;
+}
+
+/* section about */
+.about__container {
+    display: flex;
+    width: 100%;
+}
+
+.about__col-1 {
+    width: 49%;
+}
+
+.about__illustration {
+    width: 80%;
+}
+
+.about__col-2 {
+    width: 49%;
+}
+
+.about__title {
+    font-family: 'Space Mono', monospace;
+    color:  #730bd2;
+    font-weight: 200;
+}
+
+.about__text {
+    width: 75%;
+    color: #4d4d4d;
+    font-size: 0.91rem;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.about__text-weight {
+    font-weight: 700;
+}
+
+/* section banner */
+.banner {
+    background-image: url(../assets/imgs/team01.png);
+    height: 60vh;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 11%, 10% 11%, 13% 0%, 32% 0%, 35% 15%, 100% 15%, 100% 100%, 0 100%);
+    clip-path: polygon(0 11%, 10% 11%, 13% 0%, 32% 0%, 35% 15%, 100% 15%, 100% 100%, 0 100%);
+}
+
+.speakers{
+    background-color:#ff5050;
+    margin-top: -73px;
+    height: 150vh;
+    background-size:cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 1%, 4% 1%, 7% 7%, 27% 7%, 31% 1%, 61% 1%, 62%	0, 77%	0, 78% 1%, 100% 1%, 100% 30%, 87% 30%, 79% 16%, 67% 16%, 56% 35%, 74% 66%, 94%	66%, 98% 60%, 100%	60%, 100% 98%, 93%	98%, 92% 100%, 77% 100%, 76% 98%, 0	98%, 0% 89%, 8%	89%, 19% 70%, 13% 59%, 0% 59%);
+    clip-path: polygon(0 1%, 4% 1%, 7% 7%, 27% 7%, 31% 1%, 61% 1%, 62%	0, 77%	0, 78% 1%, 100% 1%, 100% 30%, 87% 30%, 79% 16%, 67% 16%, 56% 35%, 74% 66%, 94%	66%, 98% 60%, 100%	60%, 100% 98%, 93%	98%, 92% 100%, 77% 100%, 76% 98%, 0	98%, 0% 89%, 8%	89%, 19% 70%, 13% 59%, 0% 59%);
+} 
