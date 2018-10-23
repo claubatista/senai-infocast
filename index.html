@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Senai | Infocast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700,900|Space+Mono:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
+=======
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Space+Mono:400,700" rel="stylesheet">
+ 
+>>>>>>> Add sections from contact to footer
 </head>
 <body>
     <main>
@@ -237,26 +244,59 @@
           <img>
           <form>
 
-          </form>
-          <button>Enviar Mensagem</button>
-      </section>
-      <section class="face-group">
-          <h2>Participe do Grupo</h2>
-          <p>
-              Quer sugerir pautas, comentar episódios ou simplesmente se conectar com a equipe do Infocast?
-          </p>
-          <p>Faça parte do nosso grupo no Facebook!</p>
-          <a href="#"><img>
-            Participe do Grupo
-          </a>
-      </section>
-      <section class="news">
-          <h2>Receba Novidades</h2>
-          <form>
 
-          </form>
-          <button>Inscreva-se</button>
+      <!-- CONTACT -->
+      <section class="contact">
+            <h2 class="contact__title"><strong>Escreva</strong> pra Gente</h2>
+        <div class="contact__container">
+            <div class="contact__col-1">
+                <img class="contact__img" src="assets/imgs/contact-img.svg" alt="Imagem logo para contato">
+            </div>
+            <div class="contact__col-2">
+                <form action="" class="contact__form">
+                    <div class="contact__form-group">
+                        <label for="contactInputNome" class="contact__label"></label>
+                        <input type="text" class="contact__input" id="contactInputNome" placeholder="Nome">
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="contactInputEmail" class="contact__label"></label>
+                        <input type="email" class="contact__input" id="contactInputEmail" placeholder="E-mail">
+                    </div>
+                    <div class="contact__form-group">
+                            <label for="contactInputMessage" class="contact__label"></label>
+                            <p class="place">Mensagem</p>
+                            <textarea name="message" class="contact__input" id="contactInputMessage" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="contact__btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+      </section>
 
+      <!-- FACEGROUP -->
+        <section class="facegroup">
+            <div class="facegroup__container">
+                <h1 class="facegroup__title">Participe do Grupo</h1>
+                <img class="facegroup__img" src="assets/imgs/team2.png" alt="Foto grupo de pessoas">
+                <p class="facegroup__subtitle">
+                    Quer sugerir pautas, comentar episódios ou simplesmente se conectar com a equipe do Infocast?
+                </p>
+                
+                    <h1 class="facegroup__comment">Faça parte do nosso grupo no Facebook!</h1>
+                    <div class="facegroup__link"></div>
+                    
+                        <!-- <a class="facegroup__ancor" href="#"><img src="assets/imgs/facebook.png" alt="facebook icon"> -->
+                            <form class="facegroup__form" action="#">
+                                <button class="facegroup__btn" type="submit" value="Go to Facebook"/>
+                                
+                                <img class="facegroup__imag" src="assets/imgs/facebook.png" alt="facebook icon"> <p class="facegroup__prg">Participe do Grupo</p></a>
+                            </form>
+                    
+                </div>
+            </div>
+        </section>
+
+<<<<<<< HEAD
       </section>
       <section class="medias">
           <a href="#"> <img src="assets/icones/fb-logo-rodape.png" alt=""></a>
@@ -278,3 +318,56 @@
 
 </body>
 </html>
+=======
+    <!-- NEWS -->
+        <section class="news">
+                <div class="news__container">
+        
+                    <h2 class="news__title"><strong>Receba</strong> Novidades</h2>
+        
+                    <form action="" class="news__new">
+        
+                        <div class="news__form-group">
+                            <label for="contactInputName" class="news__label"></label>
+                            <input type="text" class="news__input" id="contactInputName" placeholder="Carlos Eduardo Camargo">
+                        </div>   
+                        
+                        <div class="news__form-group">
+                            <label for="contactInputEmail" class="news__label"></label>
+                            <input type="text" class="news__input" id="contactInputEmail" placeholder="carloscamargo">
+                        </div>    
+        
+                        <div class="news__form-group">
+                            <label for="contactInputWhats" class="news__label"></label>
+                            <input type="text" class="news__input" id="contactInputWhats" placeholder="Whats">
+                        </div>
+        
+                        <div class="news__news-btn">
+                            <button class="button news__button">Inscreva-se</button>
+                        </div>    
+                    </form>
+                </div>
+
+
+        <!-- MEDIAS -->
+              </section>
+              <section class="medias">
+                  <div class="medias__container">
+                    <hr>
+                    <div class="medias__img">
+                        <a href="#" class="icon"> <img src="assets/icones/fb-logo-rodape.png" alt=""></a>
+                        <a href="#" class="icon"> <img src="assets/icones/yt-logo-rodape.png" alt=""></a>
+                        <a href="#" class="icon"> <img src="assets/icones/twitter-lg-rodape.png" alt=""></a>
+                        <a href="#" class="icon"> <img src="assets/icones/instagram-logo-rodape.png" alt=""></a>
+                        <a href="#" class="icon"> <img src="assets/icones/medium-logo.png" alt=""></a>
+                    </div>    
+                  </div>
+              </section>
+            </main>
+            <footer class="footer">
+                <p>Copyright © 2018 <span>SENAI Infocast</span> </p>
+            </footer>
+            
+        </body> 
+        </html>
+>>>>>>> Add sections from contact to footer

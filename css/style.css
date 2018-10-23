@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+
+.contact__img {
+    width: 327px;
+    margin: 190px 85px;
+}
+
+.contact__container{
+    display: flex;
+    width: 100%;
+}
+
+.contact__col-1{
+    width: 49%;
+    margin-left: 266px;
+}
+
+.contact__col-2{
+    width: 100%;
+    max-width: 500px;
+    margin: 336px -164px 83px;
+}
+
+.contact__title {
+    margin: 136px 0 -300px 63px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color:#730bd2;
+    font-weight: 200;
+}
+
+strong{
+    font-weight: 900;
+}
+
+input{
+    width: 77%;
+}
+
+
+
+#contactInputNome {
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding-bottom: 6px;
+    
+}
+#contactInputEmail {
+    color:#c8c8c8;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding-bottom: 6px;
+    margin-top: 25px;
+    
+}
+
+::placeholder{
+    color: #c8c8c8;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.place{
+    font-family: 'Montserrat', sans-serif;
+    color:#c8c8c8;
+    font-size: 10px;
+    margin-top: 25px;
+
+}
+
+textarea{
+    border: 1px solid #c8c8c8;
+    width: 77%;
+}
+
+.contact__btn{
+    padding: 7px 15px;
+    margin-top: 20px;
+    background-color: #ff5050;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: white;
+}
+
+
+/* FACEGROUP */
+.facegroup__img{
+    width: 100%;
+    
+}
+
+.facegroup__container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.facegroup__title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Space Mono', monospace;
+    font-size: 28px;
+}
+
+.facegroup__subtitle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+}
+
+.facegroup__comment {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    
+}
+
+.facegroup__form{
+    display: inline;
+}
+
+.facegroup__btn {
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0px 22px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+}
+
+
+.facegroup__imag{
+    width: 22px;
+    margin: 14px 10px;
+}
+
+.facegroup__prg{
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    font-size: 14px;
+    font-weight: 600;
+    color: #730bd2;
+    margin-top: 17px;
+} 
+
+/* NEWS */
+
+.news__container{
+    width: 100%;
+
+}
+
+.news__title{
+    font-family: 'Space Mono', monospace;
+    width: 14%;
+    margin: 0 auto;
+    color: #730bd2;
+    padding-bottom: 3%;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.news__form-group{
+    font-family: 'Space Mono', monospace;
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.news__input{
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding-top: 12%;
+    
+}
+
+.news__button{
+    border-color: #730bd2;
+    border-radius: 2px;
+    color: #730bd2;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.news__news-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* MEDIAS */
+.medias__container{
+    margin-top: 5%;
+    margin: 6% 10%;
+}
+
+.medias__img{
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 30%;
+}
+
+.footer{
+    background-color: #f4f4f4;
+    height: 106px;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer p{
+    color: #5b5b5b;
+    font-size: 22px;
+    font-family: 'Space Mono', monospace;
+    margin: 0 auto;
+}
+
+.footer p span{
+    color: #ff5050;
+    font-weight: bold;
+}
+
+
