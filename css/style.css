@@ -10,6 +10,8 @@ body {
 
 h1, h2 {
     font-size: 2.3rem;
+    font-family: 'Space Mono', monospace;
+    
 }
 
 /* section about */
@@ -31,7 +33,6 @@ h1, h2 {
 }
 
 .about__title {
-    font-family: 'Space Mono', monospace;
     color:  #730bd2;
     font-weight: 200;
 }
@@ -39,7 +40,7 @@ h1, h2 {
 .about__text {
     width: 75%;
     color: #4d4d4d;
-    font-size: 0.91rem;
+    font-size: 0.95rem;
     line-height: 25px;
     margin-top: 15px;
 }
@@ -61,12 +62,78 @@ strong {
     clip-path: polygon(0 11%, 10% 11%, 13% 0%, 32% 0%, 35% 15%, 100% 15%, 100% 100%, 0 100%);
 }
 
-.speakers{
+.speakers {
+    padding-top: 150px;
     background-color:#ff5050;
-    margin-top: -73px;
-    height: 150vh;
+    margin-top: -92px;
+    height: 200vh;
     background-size:cover;
     background-position: center;
+    z-index: 0;
     -webkit-clip-path: polygon(0 1%, 4% 1%, 7% 7%, 27% 7%, 31% 1%, 61% 1%, 62%	0, 77%	0, 78% 1%, 100% 1%, 100% 30%, 87% 30%, 79% 16%, 67% 16%, 56% 35%, 74% 66%, 94%	66%, 98% 60%, 100%	60%, 100% 98%, 93%	98%, 92% 100%, 77% 100%, 76% 98%, 0	98%, 0% 89%, 8%	89%, 19% 70%, 13% 59%, 0% 59%);
     clip-path: polygon(0 1%, 4% 1%, 7% 7%, 27% 7%, 31% 1%, 61% 1%, 62%	0, 77%	0, 78% 1%, 100% 1%, 100% 30%, 87% 30%, 79% 16%, 67% 16%, 56% 35%, 74% 66%, 94%	66%, 98% 60%, 100%	60%, 100% 98%, 93%	98%, 92% 100%, 77% 100%, 76% 98%, 0	98%, 0% 89%, 8%	89%, 19% 70%, 13% 59%, 0% 59%);
 } 
+
+.speakers__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.speakers__col-1,
+.speakers__col-2 {
+    width: 49%;
+}
+
+.speakers__title {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+
+.speakers__layout-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.speakers__layout-profile_img-01,
+.speakers__layout-profile_img-02,
+.speakers__layout-profile_img-03,
+.speakers__layout-profile_img-04 {
+    position: relative;
+    
+}
+
+.speakers__layout-profile_img-01 img,
+.speakers__layout-profile_img-02 img,
+.speakers__layout-profile_img-03 img,
+.speakers__layout-profile_img-04 img
+    {
+    position: absolute;
+}
+
+.speakers__front-img {
+    z-index: 4;
+    width: 300px;
+}
+
+.speakers__medium-img {
+    z-index: 2;
+    width: 300px;
+}
+
+.speakers__back-img {
+    z-index:3;
+    width: 300px;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%)
+}
+
+.speakers__layout-profile_text{
+    width: 40%
+}
