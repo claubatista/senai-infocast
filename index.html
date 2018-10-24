@@ -1,261 +1,201 @@
 <!doctype <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Senai | Infocast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Space+Mono:400,700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700,900|Space+Mono:400,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
-
 <body>
-    <header>
-        <nav>
-            <img>
-            <ul>
-                <li>
-                    <a href="#"> Sobre o infocast</a>
-                </li>
-                <li>
-                    <a href="#">Apresentadores</a>
-                </li>
-                <li>
-                    <a href="#">Escreva pra Gente</a>
-                </li>
-                <li>
-                    <a href="#">Receba Novidades</a>
-                </li>
-                <li>
-                    <a href="#">Participe do Grupo</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <main>
-        <section class="infocast_slider">
-
-        </section>
-        <!-- section about -->
-        <section class="about">
-            <div class="about__container">
-                <div class="about__col-1">
-                    <img class="about__illustration" src="assets/imgs/about-img.svg" alt="background illustration">
+        <section class="main-banner">
+            <header class="header-container">
+                <nav class="navbar">
+                    <img class="navbar__logo" src="assets/imgs/logo.svg" alt="logomarca senai infocast" >
+                    <ul class="navbar__links">
+                        <li class = "navbar__item"> 
+                            <a href="#"> Sobre o Infocast</a>
+                            <hr class="bar">
+                        </li>
+                        <li class = "navbar__item"> 
+                            <a href="#">Apresentadores</a>
+                            <hr class="bar">
+                        </li>
+                        <li class = "navbar__item"> 
+                            <a href="#">Escreva pra Gente</a>
+                            <hr class="bar">
+                        </li>
+                        <li class = "navbar__item"> 
+                            <a href="#">Receba Novidades</a>
+                            <hr class="bar">
+                        </li>
+                        <li class = "navbar__item"> 
+                            <a href="#">Participe do Grupo</a>
+                            <hr class="bar">
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="infocast-slider">
+                <div class="frame">
+                    <div class="box">
+                        <div class="row-1">
+                            <div class="col-1-1"></div>
+                            <div class="col-1-2"><hr>há XX dias</div>
+                        </div>
+                        <div class="row-2"></div>
+                        <div class="row-3">
+                            <div class="col-3-1 col-texto">#99</div>
+                            <div class="col-3-2 col-texto">Título</div>
+                            <div class="col-3-3"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about__col-2">
-                    <h1 class="about__title">
-                        <strong>Sobre</strong><br> o Infocast
-                    </h1>
-                    <p class="about__text">
-                        O <strong class="about__text-weight"> SENAI Infocast</strong> é o podcast da Escola SENAI
-                        de Informática sobre inovação, tecnologia
-                        e educação. Toda semana, um episódio
-                        diferente descomplicando conceitos sem
-                        deixar o conhecimento de lado e mostrando
-                        um pouco do universo <strong class="about__text-weight">#SENAIInfo</strong> de um
-                        jeito descontraído e leve.
-                    </p>
-                </div>
+                    <div>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&amp;{ ADD YOUR PARAMETERS HERE }">
+                        </iframe>
+                    </div>
             </div>
-        </section>
 
-          <!-- section banner -->
-        <section class="banner">
-        </section>
 
-         <!-- section speakers -->
-        <section class="speakers">
-            <h2 class="speakers__title">Apresentadores</h2>
-            <div class="speakers__container">
-                <div class="speakers__col-1">
-                    <div class="speakers__layout-profile">
-                        <div class="speakers__layout-profile-1">
-                            <div class="speakers__layout-profile_img-01">
-                                <img class="speakers__front-img" src="assets/imgs/ricardo1.png" alt="happy girl with a beautiful smile">
-                                <img class="speakers__back-img" src="assets/imgs/ricardo2_hover.png" alt="happy girl with holding a cell phone">
-                            </div>
-                            <div class="speakers__layout-profile_text">
-                                <h2>
-                                    Ricardo<br><strong>Gerbaudo</strong>
-                                </h2>
-                                <div class="layout__line"></div>
-                                <p>
-                                    Formado na área de Tecnologia
-                                    e atualmente mestrando em Engenharia
-                                    e Gestão da Inovação na UFABC,
-                                    é apaixonado por tecnologia e entusiasta
-                                    da inovação e acredita no poder do digital
-                                    para transformar os relacionamentos.
-                                </p>
-                                <div class="speakers__layout-profile__links">
-                                    <a href="#"><img src="assets/icones/facebook-orange.png"></a>
-                                    <a href="#"><img src="assets/icones/twitter-orange.png"></a>
-                                    <a href="#"><img src="assets/icones/instagram-orange.png"></a>
-                                </div>
-                            </div>
-                        </div>
+
+
+
+<!--                 
+                    <img src=https://i.imgur.com/6cPMaLc.jpg alt="" class="cover">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&amp;{ ADD YOUR PARAMETERS HERE }">
+                    </iframe>
+                    <p class="duration"></p>
+
+
+
+
+
+
+            
+                <div class="slick-slider">
+                    <div class="frame-grey">your content1</div>
+                    <button type="button" class="btn-slick slick-prev">&lt</button>   
+
+                        <!-- "id":"e92af76a-f113-471e-c3c4-08d61ef2fa19",
+                        "userId":"e6703cbc-42e4-4ccd-009e-08d5eb479ce0",
+                        "title":"Fraude nas urnas: fato ou boato?",
+                        "dateTime":"2018-10-18T22:44:15.1091138",
+                        "mediumLink":"","duration":39,
+                        "soundCloudLink":"https://soundcloud.com/infocast/infocast-31-fraude-nas-urnas-fato-ou-fake","soundCloudId":"515672043",
+                        "cover":"https://i.imgur.com/6cPMaLc.jpg",
+                        "thumbnail":"https://i1.sndcdn.com/artworks-000422797545-2opba6-t500x500.jpg"
+                         -->
+<!--                         
                     </div>
-                    <div class="profile__mobile">
-                        <div class="speakers__layout-profile-3">
-                            <div class="speakers__layout-profile_img-03">
-                                <img class="speakers__front-img" src="assets/imgs/gabi1.png" alt="happy girl with a beautiful smile">
-                                <img class="speakers__back-img" src="assets/imgs/gabi2_hover.png" alt="happy girl with holding a cell phone">
-                            </div>
-                            <div class="speakers__layout-profile_text color">
-                                <h2>
-                                    Gabrielle<br><strong>Nascimento</strong>
-                                </h2>
-                                <div class="layout__line-color">
-
-                                </div>
-                                <p>
-                                    Jornalista de formação, prefere o analógico
-                                    e o presencial. Ainda que considere
-                                    a inovação e suas consequências positivas,
-                                    não deixa de questionar todos os fatos
-                                    e analisar sob diferentes perspectivas.
-                                </p>
-                                <div class="speakers__layout-profile__links">
-                                    <a href="#"><img src="assets/icones/facebook-cinza.png"></a>
-                                    <a href="#"><img src="assets/icones/twitter-cinza.png"></a>
-                                    <a href="#"><img src="assets/icones/instagram-cinza.png"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="speakers__layout-profile">
-                        <div class="speakers__layout-profile-2">
-                            <div class="speakers__layout-profile_img-02">
-                                <img class="speakers__front-img" src="assets/imgs/murilo1.png" alt="happy girl with a beautiful smile">
-                                <img class="speakers__back-img" src="assets/imgs/murilo2_hover.png" alt="happy girl with holding a cell phone">
-                            </div>
-                            <div class="speakers__layout-profile_text">
-                                <h2>
-                                    Murilo<br><strong>Prestes</strong>
-                                </h2>
-                                <div class="layout__line">
-
-                                </div>
-                                <p>
-                                    A alma é de designer, mas o coração
-                                    é dos podcasts e dos videoclipes peculiares.
-                                    Nosso técnico e mentor de imagens, vídeos
-                                    e músicas estranhas é do time dos
-                                    perguntadores crônicos e eternamente
-                                    curiosos.
-                                </p>
-                                <div class="speakers__layout-profile__links">
-                                    <a href="#"><img src="assets/icones/facebook-orange.png"></a>
-                                    <a href="#"><img src="assets/icones/twitter-orange.png"></a>
-                                    <a href="#"><img src="assets/icones/instagram-orange.png"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button type="button" class="btn-slick slick-next">&gt</button>
+                    <div class="frame-grey">your content3</div>
                 </div>
-
-                <div class="speakers__col-2">
-                    <div class="speakers__layout-profile">
-                        <div class="speakers__layout-profile-3 teste">
-                            <div class="speakers__layout-profile_img-03">
-                                <img class="speakers__front-img" src="assets/imgs/gabi1.png" alt="happy girl with a beautiful smile">
-                                <img class="speakers__back-img" src="assets/imgs/gabi2_hover.png" alt="happy girl with holding a cell phone">
-                            </div>
-                            <div class="speakers__layout-profile_text color">
-                                <h2>
-                                    Gabrielle<br><strong>Nascimento</strong>
-                                </h2>
-                                <div class="layout__line-color">
-
-                                </div>
-                                <p>
-                                    Jornalista de formação, prefere o analógico
-                                    e o presencial. Ainda que considere
-                                    a inovação e suas consequências positivas,
-                                    não deixa de questionar todos os fatos
-                                    e analisar sob diferentes perspectivas.
-                                </p>
-                                <div class="speakers__layout-profile__links">
-                                    <a href="#"><img src="assets/icones/facebook-cinza.png"></a>
-                                    <a href="#"><img src="assets/icones/twitter-cinza.png"></a>
-                                    <a href="#"><img src="assets/icones/instagram-cinza.png"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="speakers__layout-profile">
-                        <div class="speakers__layout-profile-4">
-                            <div class="speakers__layout-profile_img-04">
-                                <img class="speakers__front-img" src="assets/imgs/clarissa1.png" alt="happy girl with a beautiful smile">
-                                <img class="speakers__back-img" src="assets/imgs/clarissa2_hover.png" alt="happy girl with holding a cell phone">
-                            </div>
-                            <div class="speakers__layout-profile_text">
-                                <h2>
-                                    Clarissa<br><strong>Viana</strong>
-                                </h2>
-                                <div class="layout__line">
-
-                                </div>
-                                <p>
-                                    Jornalista e produtora, é eternamente
-                                    curiosa e apaixonada por tecnologia.
-                                    Perguntadora e entusiasta crônica, acredita
-                                    no poder benéfico das ferramentas que
-                                    a tecnologia e a inovação pode oferecer
-                                    ao mundo.
-                                </p>
-                                <div class="speakers__layout-profile__links">
-                                    <a href="#"><img src="assets/icones/facebook-orange.png"></a>
-                                    <a href="#"><img src="assets/icones/twitter-orange.png"></a>
-                                    <a href="#"><img src="assets/icones/instagram-orange.png"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> --> -->
+                   
         </section>
-        <section class="contact">
-            <h2>Escreva pra Gente</h2>
-            <img>
-            <form>
+      <section class="about">
+          <img>
+          <h1>
+            Sobre o Infocast
+          </h1>
+          <p>
+                O SENAI Infocast é o podcast da Escola SENAI
+                de Informática sobre inovação, tecnologia
+                e educação. Toda semana, um episódio
+                diferente descomplicando conceitos sem
+                deixar o conhecimento de lado e mostrando
+                um pouco do universo #SENAIInfo de um
+                jeito descontraído e leve.
+          </p>
+      </section>
+      <section class="banner">
+          <img src="" alt="">
+      </section>
+      <section class="speakers">
+          <h2>Apresentadores</h2>
+      </section>
+      <section class="contact">
+          <h2>Escreva pra Gente</h2>
+          <img>
+          <form>
 
-            </form>
-            <button>Enviar Mensagem</button>
-        </section>
-        <section class="face-group">
-            <h2>Participe do Grupo</h2>
-            <p>
-                Quer sugerir pautas, comentar episódios ou simplesmente se conectar com a equipe do Infocast?
-            </p>
-            <p>Faça parte do nosso grupo no Facebook!</p>
-            <a href="#"><img>
-                Participe do Grupo
-            </a>
-        </section>
-        <section class="news">
-            <h2>Receba Novidades</h2>
-            <form>
+          </form>
+          <button>Enviar Mensagem</button>
+      </section>
+      <section class="face-group">
+          <h2>Participe do Grupo</h2>
+          <p>
+              Quer sugerir pautas, comentar episódios ou simplesmente se conectar com a equipe do Infocast?
+          </p>
+          <p>Faça parte do nosso grupo no Facebook!</p>
+          <a href="#"><img>
+            Participe do Grupo
+          </a>
+      </section>
+      <section class="news">
+          <h2>Receba Novidades</h2>
+          <form>
 
-            </form>
-            <button>Inscreva-se</button>
+          </form>
+          <button>Inscreva-se</button>
 
-        </section>
-        <section class="medias">
-            <a href="#"> <img src="assets/icones/fb-logo-rodape.png" alt=""></a>
-            <a href="#"> <img src="assets/icones/yt-logo-rodape.png" alt=""></a>
-            <a href="#"> <img src="assets/icones/twitter-lg-rodape.png" alt=""></a>
-            <a href="#"> <img src="assets/icones/instagram-logo-rodape.png" alt=""></a>
-            <a href="#"> <img src="assets/icones/medium-logo.png" alt=""></a>
-        </section>
+      </section>
+      <section class="medias">
+          <a href="#"> <img src="assets/icones/fb-logo-rodape.png" alt=""></a>
+          <a href="#"> <img src="assets/icones/yt-logo-rodape.png" alt=""></a>
+          <a href="#"> <img src="assets/icones/twitter-lg-rodape.png" alt=""></a>
+          <a href="#"> <img src="assets/icones/instagram-logo-rodape.png" alt=""></a>
+          <a href="#"> <img src="assets/icones/medium-logo.png" alt=""></a>
+      </section>
     </main>
     <footer>
         <p>Copyright © 2018 SENAI Infocast</p>
-    </footer> -->
-
+    </footer>
+    
+<!-- js -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<!-- <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        setting-name: setting-value
+      });
+    });
+</script> -->
+<script type="text/javascript">
+    $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+            }
+        }
+        ]
+    });
+</script>
 </body>
-
 </html>
