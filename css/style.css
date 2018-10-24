@@ -46,7 +46,7 @@ h1, h2 {
 }
 
 strong {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .about__text-weight {
@@ -56,84 +56,197 @@ strong {
 /* section banner */
 .banner {
     background-image: url(../assets/imgs/team01.png);
-    height: 60vh;
+    height: 80vh;
     background-size: cover;
+    background-position: initial;
     -webkit-clip-path: polygon(0 11%, 10% 11%, 13% 0%, 32% 0%, 35% 15%, 100% 15%, 100% 100%, 0 100%);
     clip-path: polygon(0 11%, 10% 11%, 13% 0%, 32% 0%, 35% 15%, 100% 15%, 100% 100%, 0 100%);
 }
+/*section speakers*/
 
+/*configuração do clip path da section speakers*/
 .speakers {
     padding-top: 150px;
-    background-color:#ff5050;
-    margin-top: -92px;
-    height: 200vh;
-    background-size:cover;
-    background-position: center;
-    z-index: 0;
-    -webkit-clip-path: polygon(0 1%, 4% 1%, 7% 7%, 27% 7%, 31% 1%, 61% 1%, 62%	0, 77%	0, 78% 1%, 100% 1%, 100% 30%, 87% 30%, 79% 16%, 67% 16%, 56% 35%, 74% 66%, 94%	66%, 98% 60%, 100%	60%, 100% 98%, 93%	98%, 92% 100%, 77% 100%, 76% 98%, 0	98%, 0% 89%, 8%	89%, 19% 70%, 13% 59%, 0% 59%);
-    clip-path: polygon(0 1%, 4% 1%, 7% 7%, 27% 7%, 31% 1%, 61% 1%, 62%	0, 77%	0, 78% 1%, 100% 1%, 100% 30%, 87% 30%, 79% 16%, 67% 16%, 56% 35%, 74% 66%, 94%	66%, 98% 60%, 100%	60%, 100% 98%, 93%	98%, 92% 100%, 77% 100%, 76% 98%, 0	98%, 0% 89%, 8%	89%, 19% 70%, 13% 59%, 0% 59%);
+    margin-top: -125px;
+    height: 190vh;
+    position: relative;
 } 
 
+.speakers::before {
+    content: '';
+    position: absolute;
+    background-color: #ff5050;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    -webkit-clip-path: polygon(0 1%, 4% 1%, 7% 7%, 27% 7%, 31% 1%, 61% 1%, 62% 0, 77% 0, 78% 1%, 100% 1%, 100% 30%, 87% 30%, 79% 16%, 67% 16%, 56% 35%, 74% 66%, 94% 66%, 98% 60%, 100% 60%, 100% 98%, 93% 98%, 92% 100%, 77% 100%, 76% 98%, 0 98%, 0% 89%, 8% 89%, 19% 70%, 13% 59%, 0% 59%);
+    clip-path: polygon(0 1%, 4% 1%, 7% 7%, 27% 7%, 31% 1%, 61% 1%, 62% 0, 77% 0, 78% 1%, 100% 1%, 100% 30%, 87% 30%, 79% 16%, 67% 16%, 56% 35%, 74% 66%, 94% 66%, 98% 60%, 100% 60%, 100% 98%, 93% 98%, 92% 100%, 77% 100%, 76% 98%, 0 98%, 0% 89%, 8% 89%, 19% 70%, 13% 59%, 0% 59%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .speakers__container {
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
+    position: relative;
 }
 
-.speakers__col-1,
-.speakers__col-2 {
-    width: 49%;
-}
 
+/*title*/
 .speakers__title {
     display: block;
     margin: 0 auto;
     color: #fff;
     text-align: center;
+    z-index: 3;
+    position: relative;
 }
 
 
-.speakers__layout-profile {
+/*box de contifuração todo o conteudo de cada profile*/
+.speakers__layout-profile-1 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    position: relative;
+    bottom: -50px;
 }
 
+.speakers__layout-profile-2 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: -175px;
+}
+
+.speakers__layout-profile-3 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: -250px;
+    right: 90px;
+}
+
+.speakers__layout-profile-4 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: -375px;
+    right: 90px;
+}
+
+
+/*configuração de positions das divs e depois das imagens*/
 .speakers__layout-profile_img-01,
 .speakers__layout-profile_img-02,
 .speakers__layout-profile_img-03,
 .speakers__layout-profile_img-04 {
-    position: relative;
-    
+    position: relative;   
 }
 
 .speakers__layout-profile_img-01 img,
 .speakers__layout-profile_img-02 img,
 .speakers__layout-profile_img-03 img,
-.speakers__layout-profile_img-04 img
-    {
-    position: absolute;
+.speakers__layout-profile_img-04 img {
+    position: absolute;    
 }
 
+/*configuração das margens das fotos de cada coluna*/
+.speakers__layout-profile_img-01,
+.speakers__layout-profile_img-02 {
+    margin: -40px 0 0 140px;
+    z-index: 0;
+}
+
+.speakers__layout-profile_img-03,
+.speakers__layout-profile_img-04 {
+    margin: -45px 0 0 65px;
+    z-index: 0;
+}
+
+
+/*configurações dos hovers*/
 .speakers__front-img {
     z-index: 4;
-    width: 300px;
-}
-
-.speakers__medium-img {
-    z-index: 2;
-    width: 300px;
+    width: 320px;
 }
 
 .speakers__back-img {
     z-index:3;
-    width: 300px;
-    mix-blend-mode: multiply;
-    filter: grayscale(100%)
+    width: 320px;
+    opacity: 0;
 }
 
-.speakers__layout-profile_text{
-    width: 40%
+.speakers__layout-profile_img-01:hover .speakers__front-img {
+    opacity: 0.1;
+}
+.speakers__layout-profile_img-01:hover .speakers__back-img {
+    opacity: 1;
+}
+
+.speakers__layout-profile_img-02:hover .speakers__front-img {
+    opacity: 0.1;
+}
+
+.speakers__layout-profile_img-02:hover .speakers__back-img {
+    opacity: 1;
+}
+.speakers__layout-profile_img-03:hover .speakers__front-img {
+    opacity: 0.1;
+}
+.speakers__layout-profile_img-03:hover .speakers__back-img {
+    opacity: 1;
+}
+
+.speakers__layout-profile_img-04:hover .speakers__front-img {
+    opacity: 0.1;
+}
+
+.speakers__layout-profile_img-04:hover .speakers__back-img {
+    opacity: 1;
+}
+
+
+/*configuração dos textos*/
+.speakers__layout-profile_text {
+    width: 45%;
+    color:#fff;
+    font-size: 0.77rem;
+    line-height: 25px;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+/*configuração dos títulos*/
+.speakers__layout-profile_text h2 {
+    font-weight: 200;
+    line-height: 35px;
+    font-size: 1.9rem;
+}
+
+/*configuração do texto colorido*/
+.color{
+    color: #ff5050;
+}
+
+/*configuração ícones links*/
+.speakers__layout-profile__links img{
+    width: 33px;
+    margin: 15px 7px 0 0;
+}
+
+
+/*configuração linha abixo do título*/
+.layout__line{
+    border-bottom: 4px solid white;
+    width: 25px;
+    margin: 15px 0;
+}
+
+.layout__line-color{
+    border-bottom: 4px solid #ff5050;
+    width: 25px;
+    margin: 15px 0;
 }
