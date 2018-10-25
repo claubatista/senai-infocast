@@ -245,56 +245,55 @@
           <form>
 
 
-      <!-- CONTACT -->
-      <section class="contact">
-            <h2 class="contact__title"><strong>Escreva</strong> pra Gente</h2>
-        <div class="contact__container">
-            <div class="contact__col-1">
-                <img class="contact__img" src="assets/imgs/contact-img.svg" alt="Imagem logo para contato">
-            </div>
-            <div class="contact__col-2">
-                <form action="" class="contact__form">
-                    <div class="contact__form-group">
-                        <label for="contactInputNome" class="contact__label"></label>
-                        <input type="text" class="contact__input" id="contactInputNome" placeholder="Nome">
-                    </div>
-                    <div class="contact__form-group">
-                        <label for="contactInputEmail" class="contact__label"></label>
-                        <input type="email" class="contact__input" id="contactInputEmail" placeholder="E-mail">
-                    </div>
-                    <div class="contact__form-group">
-                            <label for="contactInputMessage" class="contact__label"></label>
-                            <p class="place">Mensagem</p>
-                            <textarea name="message" class="contact__input" id="contactInputMessage" cols="30" rows="10"></textarea>
-                    </div>
-                    <button class="contact__btn">Enviar Mensagem</button>
-                </form>
-            </div>
+ <!-- CONTACT -->
+ <section class="contact">
+    <h2 class="contact__title"><strong>Escreva</strong> pra Gente</h2>
+    <div class="contact__container">
+        <div class="contact__col-1">
+            <img class="contact__img" src="assets/imgs/contact-img.svg" alt="Imagem logo para contato">
         </div>
-      </section>
-
-      <!-- FACEGROUP -->
-        <section class="facegroup">
-            <div class="facegroup__container">
-                <h1 class="facegroup__title">Participe do Grupo</h1>
-                <img class="facegroup__img" src="assets/imgs/team2.png" alt="Foto grupo de pessoas">
-                <p class="facegroup__subtitle">
-                    Quer sugerir pautas, comentar episódios ou simplesmente se conectar com a equipe do Infocast?
-                </p>
-                
-                    <h1 class="facegroup__comment">Faça parte do nosso grupo no Facebook!</h1>
-                    <div class="facegroup__link"></div>
-                    
-                        <!-- <a class="facegroup__ancor" href="#"><img src="assets/imgs/facebook.png" alt="facebook icon"> -->
-                            <form class="facegroup__form" action="#">
-                                <button class="facegroup__btn" type="submit" value="Go to Facebook"/>
-                                
-                                <img class="facegroup__imag" src="assets/imgs/facebook.png" alt="facebook icon"> <p class="facegroup__prg">Participe do Grupo</p></a>
-                            </form>
-                    
+        <div class="contact__col-2">
+            <form action="" class="contact__form" id="formcontact">
+                <div class="contact__form-group">
+                    <label for="contactInputName" class="contact__label"></label>
+                    <input type="text" class="contact__input" id="contactInputName" placeholder="Nome">
                 </div>
-            </div>
-        </section>
+                <div class="contact__form-group">
+                    <label for="contactInputEmail" class="contact__label"></label>
+                    <input type="email" class="contact__input" id="contatoInputEmail" placeholder="E-mail">
+                </div>
+                <div class="contact__form-group">
+                    <label for="contactInputMessage" class="contact__label"></label>
+                    <p class="place">Mensagem</p>
+                    <textarea name="message" class="contact__input" id="contactInputMessage" cols="30" rows="10"></textarea>
+                </div>
+                <button class="contact__btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FACEGROUP -->
+<section class="facegroup">
+    <div class="facegroup__container">
+        <h1 class="facegroup__title">Participe do Grupo</h1>
+        <p class="facegroup__subtitle">
+            Quer sugerir pautas, comentar episódios ou simplesmente se conectar com a equipe do Infocast?
+        </p>
+
+        <h1 class="facegroup__comment">Faça parte do nosso grupo no Facebook!</h1>
+        <div class="facegroup__link"></div>
+
+
+        <form class="facegroup__form" action="#">
+            <button class="facegroup__btn" type="submit" value="Go to Facebook">
+
+                <img class="facegroup__imag" src="assets/imgs/facebook.png" alt="facebook icon">
+                <p class="facegroup__prg">Participe do Grupo</p></a>
+        </form>
+    </div>
+    </div>
+</section>
 
 <<<<<<< HEAD
       </section>
@@ -325,21 +324,21 @@
         
                     <h2 class="news__title"><strong>Receba</strong> Novidades</h2>
         
-                    <form action="" class="news__new">
+                    <form action="" class="news__new" id="formNews">
         
                         <div class="news__form-group">
-                            <label for="contactInputName" class="news__label"></label>
-                            <input type="text" class="news__input" id="contactInputName" placeholder="Carlos Eduardo Camargo">
+                            <label for="newsInputName" class="news__label"></label>
+                            <input type="text" class="news__input" id="newsInputName" placeholder="Carlos Eduardo Camargo">
                         </div>   
                         
                         <div class="news__form-group">
-                            <label for="contactInputEmail" class="news__label"></label>
-                            <input type="text" class="news__input" id="contactInputEmail" placeholder="carloscamargo">
+                            <label for="newsInputEmail" class="news__label"></label>
+                            <input type="email" class="news__input" id="newsInputEmail" placeholder="carloscamar">
                         </div>    
         
                         <div class="news__form-group">
-                            <label for="contactInputWhats" class="news__label"></label>
-                            <input type="text" class="news__input" id="contactInputWhats" placeholder="Whats">
+                            <label for="newsInputWhats" class="news__label"></label>
+                            <input type="number" class="news__input" id="newsInputWhats" placeholder="Whats">
                         </div>
         
                         <div class="news__news-btn">
@@ -355,11 +354,11 @@
                   <div class="medias__container">
                     <hr>
                     <div class="medias__img">
-                        <a href="#" class="icon"> <img src="assets/icones/fb-logo-rodape.png" alt=""></a>
-                        <a href="#" class="icon"> <img src="assets/icones/yt-logo-rodape.png" alt=""></a>
-                        <a href="#" class="icon"> <img src="assets/icones/twitter-lg-rodape.png" alt=""></a>
-                        <a href="#" class="icon"> <img src="assets/icones/instagram-logo-rodape.png" alt=""></a>
-                        <a href="#" class="icon"> <img src="assets/icones/medium-logo.png" alt=""></a>
+                        <a href="#"> <img class="icon" src="assets/icones/facebook-logo-footer.png" alt=""></a>
+                        <a href="#"> <img class="icon" src="assets/icones/youtube-logo-rodape.png" alt=""></a>
+                        <a href="#"> <img class="icon" src="assets/icones/twitter-logo-rodape.png" alt=""></a>
+                        <a href="#"> <img class="icon" src="assets/icones/instagram-logo-rodape.png" alt=""></a>
+                        <a href="#"> <img class="icon" src="assets/icones/medium-logo-rodape.png" alt=""></a>
                     </div>    
                   </div>
               </section>
@@ -367,7 +366,10 @@
             <footer class="footer">
                 <p>Copyright © 2018 <span>SENAI Infocast</span> </p>
             </footer>
+            <script src="script/validateContact.js"> </script>
+            <script src="script/validateNewsLetter.js"> </script>
             
+        
         </body> 
         </html>
 >>>>>>> Add sections from contact to footer
