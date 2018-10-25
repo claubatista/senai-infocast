@@ -6,16 +6,19 @@
     <title>Senai | Infocast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700,900|Space+Mono:400,700" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
-    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" href="css/infocast.css">
 </head>
 <body>
     <main>
-        <section class="main-banner">
-            <header class="header-container">
+        <section class="infocast-banner">
+            <header>
+                    <nav class="navbar-hamburguer">
+                        <img class="navbar-hamburguer__logo" src="assets/imgs/logo.svg" alt="logomarca senai infocast">
+                        <img src="assets/icones/menu-hamburguer.png" class="navbar-hamburguer__icone" alt="">
+                    </nav>
                 <nav class="navbar">
-                    <img class="navbar__logo" src="assets/imgs/logo.svg" alt="logomarca senai infocast" >
+                    <img class="navbar__logo" src="assets/imgs/logo.svg" alt="logomarca senai infocast">
                     <ul class="navbar__links">
                         <li class = "navbar__item"> 
                             <a href="#"> Sobre o Infocast</a>
@@ -41,113 +44,15 @@
                 </nav>
             </header>
             <div class="infocast-slider">
-                <div class="frame">
-                    <div class="box">
-                        <div class="row-1">
-                            <div class="col-1-1"></div>
-                            <div class="col-1-2"><hr>há XX dias</div>
-                        </div>
-                        <div class="row-2"></div>
-                        <div class="row-3">
-                            <div class="col-3-1 col-texto">#99</div>
-                            <div class="col-3-2 col-texto">Título</div>
-                            <div class="col-3-3"></div>
-                        </div>
-                    </div>
-                </div>
-                    <div>
-                        <div id="modal-podcast" class="modal">
-                                <div class="modal-podcast__content">
-                                    <span class="close">&times;</span>
-                                    <p>Some text in the Modal..</p>
-                                </div>
-                        </div>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&amp;{ ADD YOUR PARAMETERS HERE }">
-                        </iframe>
-                            <div class="box-podcast">
-                                <div class="btn-div">
-                                    <button id="btn" class="btn">
-                                        <p class="arrow"></p>
-                                        <p>Mais Informações</p>
-                                    </button> 
-                                </div> 
-                                <div class="podcasts">                                   
-                                        
-                                        <div class="podcasts__itens">
-                                            <a href="">
-                                                <img src="assets/icones/spotify-logo-button.png" alt="">
-                                                <span>Spotify</span>
-                                            </a>
-                                        </div>
-                                        <div class="podcasts__itens">
-                                            <a href="">
-                                                <img src="assets/icones/itunes-icone.png" alt="">
-                                                <span>Itunes</span>
-                                            </a>
-                                        </div>
-                                        <div class="podcasts__itens">
-                                            <a href="">
-                                                <img src="assets/icones/deezer-logo.png" alt="">
-                                                <span>Deezer</span>
-                                            </a>
-                                        </div>
-                                        <div class="podcasts__itens">
-                                            <a href="">
-                                                <img src="assets/icones/youtube.png" alt="">
-                                                <span>Youtube</span>
-                                            </a>
-                                        </div>
-                                        <div class="podcasts__itens">
-                                            <a href="">
-                                                <img src="assets/icones/medium.png" alt="">
-                                                <span>Medium</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-        </section>
-
-
-
-
-
-<!--                 
-                    <img src=https://i.imgur.com/6cPMaLc.jpg alt="" class="cover">
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&amp;{ ADD YOUR PARAMETERS HERE }">
-                    </iframe>
-                    <p class="duration"></p>
-
-
-
-
-
-
-            
-                <div class="slick-slider">
-                    <div class="frame-grey">your content1</div>
-                    <button type="button" class="btn-slick slick-prev">&lt</button>   
-
-                        <!-- "id":"e92af76a-f113-471e-c3c4-08d61ef2fa19",
-                        "userId":"e6703cbc-42e4-4ccd-009e-08d5eb479ce0",
-                        "title":"Fraude nas urnas: fato ou boato?",
-                        "dateTime":"2018-10-18T22:44:15.1091138",
-                        "mediumLink":"","duration":39,
-                        "soundCloudLink":"https://soundcloud.com/infocast/infocast-31-fraude-nas-urnas-fato-ou-fake","soundCloudId":"515672043",
-                        "cover":"https://i.imgur.com/6cPMaLc.jpg",
-                        "thumbnail":"https://i1.sndcdn.com/artworks-000422797545-2opba6-t500x500.jpg"
-                         -->
-<!--                         
-                    </div>
-                    <button type="button" class="btn-slick slick-next">&gt</button>
-                    <div class="frame-grey">your content3</div>
-                </div>
-            </div> --> -->
+                    <div id="control"></div>
+                    <div class="slider center" id="slider-frame">
+                        <!-- Aqui entam os frames -->
+                    </div>  
+            </div>
                    
         </section>
+
+
       <section class="about">
           <img>
           <h1>
@@ -208,43 +113,10 @@
     </footer>
     
 <!-- js -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 <script src="js/script.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<!-- <script type="text/javascript">
-    $(document).ready(function(){
-      $('.your-class').slick({
-        setting-name: setting-value
-      });
-    });
-</script> -->
-<script type="text/javascript">
-    $('.center').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-            }
-        }
-        ]
-    });
-</script>
+
 </body>
 </html>
