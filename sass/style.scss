@@ -1,9 +1,11 @@
 @import 'base/base';
 
 @import 'helpers/variaveis';
+@import 'components/btn';
 
-@import 'layout/nav';
-@import 'layout/infocast-slider';
+@import'layout/infocast-banner';
+@import'layout/navbar';
+@import'layout/infocast-slider';
 @import 'layout/about';
 @import 'layout/banner';
 @import 'layout/speakers';
