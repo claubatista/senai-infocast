@@ -2,9 +2,9 @@ body{
     margin: 0;
 }
 
-.contact{
-    margin-left: -77px;
-}
+// .contact{
+//     margin-left: -77px;
+// }
 
 .contact__img {
     width: 441px;
@@ -14,6 +14,7 @@ body{
 .contact__container{
     display: flex;
     width: 100%;
+    margin: 0 auto;
 }
 
 .contact__col-1{
@@ -185,7 +186,7 @@ textarea{
     }
 
     .contact__col-2{
-        width: 50%;
+        width: 75%;
         margin: 0;
     }
     #contactInputEmail {
@@ -195,7 +196,6 @@ textarea{
         padding-bottom: 16px;
     }
    
-
     .contact__input{
         width: 100%;
     }
@@ -282,7 +282,7 @@ textarea{
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 425px){
 
     .contact {
         margin: 0 auto;
@@ -293,8 +293,8 @@ textarea{
 
     }
     .contact__col-2{
-        width: 88%;
-        margin: 0 auto;
+        width: 75%;
+       
     }
     ::placeholder{
         font-size: 14px;
@@ -478,11 +478,6 @@ input {
         margin-top: 5%;
         margin-bottom: 10%;
     }
-  
-    .medias__container{
-        margin: 6% -33%;
-    }
-
 }
 
  @media (max-width: 768px){
@@ -514,9 +509,7 @@ input {
         justify-content: space-between;
         margin: 4% 30%;
     }
-    .medias__container{
-        margin: 4% -26%;
-    }
+
     .icon{
         width: 50%;
     }
@@ -554,9 +547,6 @@ input {
             margin-bottom: 11%;
         }
 
-        .medias__container{
-            margin: -3% -49%;
-        }
 
        .medias__img{
             display: flex;

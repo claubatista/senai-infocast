@@ -20,9 +20,10 @@
         left: 0;
         width: 100%;
         height: 100%;
-        @media (max-width: 425px){
-            -webkit-clip-path:polygon(0 1%, 4% 1%, 8% 2%, 28% 2%, 32% 1%, 57% 1%, 60% -1%, 76% -1%, 80% 1%, 100% 1%, 100% 30%, 68% 30%, 55% 25%, 15% 25%, -15% 35%, 27% 49%, 65% 49%, 91% 49%, 95% 46%, 100% 46%, 100% 98%,100% 100%, 0% 200%);
-            clip-path:polygon(0 1%, 4% 1%, 8% 2%, 28% 2%, 32% 1%, 57% 1%, 60% -1%, 76% -1%, 80% 1%, 100% 1%, 100% 30%, 68% 30%, 55% 25%, 15% 25%, -15% 35%, 27% 49%, 65% 49%, 91% 49%, 95% 46%, 100% 46%, 100% 98%,100% 100%, 0% 200%);
+
+        @media (max-width: 425px) {
+            -webkit-clip-path:polygon(0% 0%,4%0%,7%1%,27% 1%,30% 0%,61% 0%,62% 0%,77% 0%,78% 0%,100% 0%,100% 37%,67% 37%,47% 31%,17% 31%,0% 35%,0% 44%,26% 51%,87% 51%,96% 49%,100% 49%,100% 100%,93% 100%,92% 100%,77% 100%,76% 100%,0% 100%);
+            clip-path:polygon(0% 0%,4%0%,7%1%,27% 1%,30% 0%,61% 0%,62% 0%,77% 0%,78% 0%,100% 0%,100% 37%,67% 37%,47% 31%,17% 31%,0% 35%,0% 44%,26% 51%,87% 51%,96% 49%,100% 49%,100% 100%,93% 100%,92% 100%,77% 100%,76% 100%,0% 100%);
         }
     }
     &__container {
@@ -30,10 +31,14 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        max-width: 1280px;
 
-        @media(max-width: 425px){
+        @media(max-width: 1280px) {
+            width: 95%;
+         }
+
+        @media(max-width: 425px) {
            flex-direction: column;
-    
         }
     }
 
@@ -52,7 +57,7 @@
 .profile__mobile {
     display: none;
 
-    @media(max-width: 425px){
+    @media(max-width: 425px) {
         display: flex;
     }
 }
@@ -70,6 +75,10 @@
 
 .speakers__layout-profile {
     margin-bottom: 100px;
+
+    @media(max-width: 425px) {
+        margin-bottom: 65px;
+    }
 }
 
 /*box de contifuração todo o conteudo de cada profile*/
@@ -80,7 +89,7 @@
     display: flex;
     justify-content: space-between;  
 
-    @media(max-width: 425px){
+    @media(max-width: 425px) {
         flex-direction: column;
     }
 }
@@ -143,7 +152,7 @@
 .speakers__layout-profile_text {
     width: 45%;
     color:#fff;
-    font-size: 0.77rem;
+    font-size: 0.9rem;
     line-height: 25px;
     margin-top: 15px;
     z-index: 1;
@@ -163,20 +172,20 @@
     }
 
     /*configuração do texto colorido*/
-    &.color{
+    &.color {
         color: #ff5050;
     }
 }
 
 /*configuração ícones links*/
-.speakers__layout-profile__links img{
+.speakers__layout-profile__links img {
     width: 33px;
     margin: 15px 7px 0 0;
 }
 
 
 /*configuração linha abixo do título*/
-.layout__line{
+.layout__line {
     border-bottom: 4px solid white;
     width: 25px;
     margin: 15px 0;
@@ -188,7 +197,7 @@
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 425px) {
     .speakers__col-1,
     .speakers__col-2 {
         width: 100%;
@@ -196,7 +205,10 @@
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 425px) {
+    .speakers__layout-profile-3 {
+        margin-bottom: 110px;
+    }
     .teste {
         display: none;
     }
