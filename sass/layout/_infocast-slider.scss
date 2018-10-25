@@ -1,0 +1,127 @@
+.slide{
+    margin: 0 20px;
+    width: 70vw;
+
+    &__cover {
+        height: 170px;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.row-1 {
+    height: 28%;
+    display: flex; 
+
+    &__col-1 {
+        width: 21%;
+        border-top: 2px solid #FF5050;
+        border-left: 2px solid #FF5050; 
+    }   
+
+    &__col-2 {
+        width: 79%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem; 
+    }
+}
+  
+.row-2 {
+    height: 23%;
+    display: flex;
+}
+  
+.row-3 {
+    height: 49%;
+    display: flex; 
+
+    &__col-1 {
+        width: 16%;
+        justify-content: center; 
+    }
+      
+    &__col-2 {
+        width: 79%;
+        justify-content: start; 
+    }
+      
+    &__col-3 {
+        width: 5%;
+        border-right: 2px solid #FF5050;
+        border-bottom: 2px solid #FF5050; 
+    }
+}
+
+    
+.nav-podcast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3rem; 
+
+    &__info{
+    }
+
+    &__links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem; 
+    }
+}
+  
+  
+.podcast-link{
+    
+    & a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0.2rem 1rem;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #A03232;
+        margin-left: 1.6rem; 
+    }
+
+    & img {
+        height: 2vh;
+        margin-right: 0.3rem; 
+    }
+}
+  
+.btn-info{
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.1rem;
+    background-color: #fff;
+    color: #ff3f40;
+    font-weight: 700;
+    font-size: 0.7rem;
+    cursor: pointer;
+
+}   
+  
+.modal {
+    display: none;
+    width: 100%;
+    overflow: auto;
+}
+
+.modal-podcast__content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; 
+}
+  
