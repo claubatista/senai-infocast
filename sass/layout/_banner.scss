@@ -1,0 +1,9 @@
+/* section banner */
+.banner {
+    background-image: url(../assets/imgs/team01.png);
+    height: 80vh;
+    background-size: cover;
+    background-position: initial;
+    -webkit-clip-path: polygon(0 11%, 10% 11%, 13% 0%, 32% 0%, 35% 15%, 100% 15%, 100% 100%, 0 100%);
+    clip-path: polygon(0 11%, 10% 11%, 13% 0%, 32% 0%, 35% 15%, 100% 15%, 100% 100%, 0 100%);
+}

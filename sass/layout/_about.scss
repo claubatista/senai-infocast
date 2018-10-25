@@ -1,0 +1,61 @@
+/* section about */
+.about__container {
+    display: flex;
+    width: 100%;
+
+    .about__col-1 {
+        width: 49%;
+        // background-image: url(../assets/imgs/about-img.svg);
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        .about__illustration {
+            width: 90%;
+
+            @media (max-width: 1024px) {
+                width: 90%;
+            }
+        }
+    }
+
+    .about__col-2 {
+        width: 49%;
+        margin-left: 20px;
+
+        @media (max-width: 768px) {
+            margin: 0 auto;
+            width: 85%;
+        }
+
+        @media (max-width: 425px) {
+            width: 75%;
+        }
+
+        .about__title {
+            color:  #730bd2;
+            font-weight: 200;
+        }
+        
+        .about__text {
+            width: 75%;
+            color: #4d4d4d;
+            font-size: 0.95rem;
+            line-height: 25px;
+            margin-top: 15px;
+
+            @media (max-width: 768px) {
+                width: 100%
+            }
+        
+            &-weight {
+                font-weight: 700;
+            }
+        
+            strong {
+                font-weight: 900;
+            }
+        } 
+    }  
+}
