@@ -1,0 +1,221 @@
+.contact__img {
+    width: 441px;
+    margin: 151px 8px;
+}
+
+.contact__container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact__col-1{
+    width: 49%;
+    margin-left: 180px;
+}
+
+.contact__col-2 {
+    width: 100%;
+    max-width: 435px;
+    margin: 336px -51px 83px -47px;
+}
+.contact__title {
+    margin: 136px 0 -300px 60px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: #730bd2;
+    font-weight: 200;
+    font-size: 2.5em;
+}
+
+strong{
+    font-weight: 900;
+}
+
+.contact__input{
+    width: 83%;
+}
+
+.contact_input_error{
+    color: #ff5050;
+    border: none;
+    border-bottom: 1px solid #ff5050;
+    padding-bottom: 6px;
+    width: 83%;
+
+}
+
+#contactInputName {
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding-bottom: 6px;
+    
+}
+#contatoInputEmail {
+    color:#c8c8c8;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding-bottom: 6px;
+    margin-top: 25px;
+    
+}
+
+::placeholder{
+    color: #c8c8c8;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.place{
+    font-family: 'Montserrat', sans-serif;
+    color:#c8c8c8;
+    font-size: 10px;
+    margin-top: 25px;
+
+}
+
+textarea{
+    border: 1px solid #c8c8c8;
+    width: 83%;
+    height: 112px;
+}
+
+.contact__btn{
+    padding: 7px 15px;
+    margin-top: 20px;
+    background-color: #ff5050;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: white;
+}
+
+@media (max-width: 1024px){
+
+    .contact__img {
+        display: none;
+    }
+
+    .contact__title {
+        margin: 50 auto 0; 
+        font-size: 44px;
+        width: 100%;
+    }
+
+    .contact__container {
+        justify-content: center;
+    }
+
+    .contact__col-1{
+        display: none;
+    }
+
+    .contact__col-2{
+        width: 75%;
+        margin: 0;
+    }
+    #contactInputEmail {
+        margin-top: 72px;
+    }
+    #contactInputNome {
+        padding-bottom: 16px;
+    }
+   
+    .contact__input{
+        width: 100%;
+    }
+    .contact__form{
+        margin: 70px 0 0;
+    }
+    .contact__btn{
+        padding: 22px 0px 22px 0px;
+        margin: 65px auto;
+        display: block;
+        width: 256px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 7px;
+    }
+    ::placeholder{
+        font-size: 17px;
+        margin-bottom: 25px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    textarea{
+        height: 230px;
+    }
+    .place{
+        font-size: 17px;
+        margin-top: 72px;
+    
+    }
+}  
+
+@media (max-width: 768px){
+
+    #contatoInputEmail{
+        margin-top: 59px;
+    }
+
+    .place {
+        font-size: 17px;
+        margin-top: 59px;
+    }
+    
+    textarea{
+        height: 198px;
+        margin-top: 9px
+    }
+
+    .contact__title {
+        margin-top: 30px;
+    }
+
+    .contact__btn {
+        width: 265px;
+        font-size: 22px;
+    }
+}  
+
+@media (max-width: 425px){
+
+    .contact {
+        margin: 0 auto;
+    }
+
+    .contact__form {
+        margin: 50px 0 0;
+    }
+
+    .contact__title {
+        font-size: 35px;
+        margin-top: 30px;
+    }
+
+    .contact__col-2 {
+        width: 83%;
+    }
+
+    ::placeholder{
+        font-size: 16px;
+        
+    }
+    .place {
+        font-size: 16px;
+        margin-top: 59px;
+    }
+
+    textarea{
+        height: 135px;
+    }
+    .contact__btn{
+        padding: 15px 0px 15px 0px;
+        margin: 40px auto;
+        width: 234px;
+        font-size: 19px;
+        border-radius: 4px;
+    }
+}    

@@ -1,16 +1,59 @@
 .slide{
-    margin: 0 20px;
-    width: 70vw;
+    margin: 60px;
+    width: 45vw;
 
     &__cover {
-        height: 170px;
-        background-size: contain;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 320px;
+        background-size: cover;
     }
 }
 
+.infocast-slider {   
+    .slick-slide {
+        height: auto;
+        filter: grayscale(100%);
+        transform: scale(0.8);
+        transition: 0.2s ease-in;
+        
+        .btn-info{
+            visibility: hidden;
+        }
+
+        &.slick-current {
+            filter: grayscale(0%);
+            transform: scale(1);
+        
+            .btn-info{
+                visibility:visible;
+            }
+        }
+    }
+}
+    
+#control {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    position: absolute;
+    left: calc(50% - 30vw);
+    top: 70vh;
+    z-index: 999;
+
+    .arrow {
+        border: none;
+        font-weight: bold;
+        font-size: 5rem;
+        background-color: transparent;
+        background-image: url('../assets/icones/arrow.svg');
+        background-size: cover;
+        width: 40px;
+        height: 60px;
+
+        &#next {
+            transform: rotate(180deg);
+        }
+    }
+}
 
 .row-1 {
     height: 28%;
@@ -60,35 +103,33 @@
 
     
 .nav-podcast {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    // justify-content: space-between;
     margin-top: 0.3rem; 
-
-    &__info{
-    }
-
+    padding: 0;
+    
     &__links {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      list-style: none;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.7rem; 
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.7rem; 
+        padding: 0;
     }
 }
   
-  
 .podcast-link{
-    
+    text-align: center; 
+
     & a {
         text-decoration: none;
         color: #ffffff;
-        padding: 0.2rem 1rem;
+        padding: 0.2rem 1.0rem;
         border-radius: 2px;
         display: flex;
         align-items: center;
         border: 1px solid #A03232;
-        margin-left: 1.6rem; 
     }
 
     & img {
@@ -97,7 +138,7 @@
     }
 }
   
-.btn-info{
+.btn-info {
     display: flex;
     align-items: center;
     border: none;
@@ -109,7 +150,6 @@
     font-weight: 700;
     font-size: 0.7rem;
     cursor: pointer;
-
 }   
   
 .modal {

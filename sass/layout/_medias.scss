@@ -1,0 +1,49 @@
+.medias__img{
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 570px;
+}
+ 
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: #c8c8c8;
+    margin: 25px;
+}
+
+.icon:hover{
+    fill: #ff5050;
+}
+
+@media (max-width: 768px){
+    .medias__img{
+        justify-content: center;
+    }
+
+    .icon {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 425px){
+    
+    .medias__img{
+        margin: 0 auto;
+    }
+    
+    ::placeholder{
+         color: #c8c8c8;
+         margin-bottom: 1px;
+         font-size: 10px;
+         font-weight: bold;
+         font-family: 'Montserrat', sans-serif;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+}
